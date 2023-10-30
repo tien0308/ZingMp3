@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/icon_zing_mp3_60.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <title>Zing Mp3 (clone)</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="c-2">
+            <div class="sidebar hide-on-mobile">
+                <div class="sidebar-logo">
+                    <a href="#">
+                        <img src="./img/logopc.svg.png" class="logo-img hide-on-desktop">
+                        <img src="./img/logomb.png" class="logo-img-mb">
+                    </a>
+                </div>
+
+                <div class="navbar">
+                    <div class="nav-item active">
+                        <i class="nav-item-icon fas fa-music"></i>
+                        <p class="nav-item-text hide-on-m-b">Cá nhân</p>
+                    </div>
+
+                    <div class="nav-item">
+                        <i class="nav-item-icon fas fa-map-marked-alt"></i>
+                        <p class="nav-item-text hide-on-m-b">Khám phá</p>
+                    </div>
+
+                    <div class="nav-item">
+                        <i class="nav-item-icon fas fa-globe"></i>
+                        <p class="nav-item-text hide-on-m-b">#Zingchart</p>
+                    </div>
+
+                    <div class="nav-item">
+                        <i class="nav-item-icon fas fa-podcast"></i>
+                        <p class="nav-item-text hide-on-m-b">Radio & Podcast</p>
+                    </div>
+
+                    <div class="nav-item">
+                        <i class="nav-item-icon far fa-list-alt"></i>
+                        <p class="nav-item-text hide-on-m-b">Theo dõi</p>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="nav-item">
+                        <i class="nav-item-icon fas fa-headphones"></i>
+                        <p class="nav-item-text hide-on-m-b">Nhạc mới</p>
+                    </div>
+
+                    <div class="nav-item">
+                        <i class="nav-item-icon far fa-star"></i>
+                        <p class="nav-item-text hide-on-m-b">Top 100</p>
+                    </div>
+
+                    <div class="nav-item">
+                        <i class="nav-item-icon fas fa-photo-video"></i>
+                        <p class="nav-item-text hide-on-m-b">MV</p>
+                    </div>
+
+                    <div class="vip-sidebar">
+                        <p class="vip-heading">
+                            Nghe nhạc không quảng cáo cùng kho VIP
+                        </p>
+                        <button class="btn-buy-vip">
+                            MUA VIP
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="c-10">
+            <div class="player">
+                <header class="header">
+                    <div class="header-left">
+                        <div class="header-btn hide-on-mobile">
+                            <i class="fa-solid fa-left-long header-icon-prev"></i>
+                            <i class="fa-solid fa-right-long header-icon-next"></i>
+                        </div>
+                        <div class="header-search is-flex">
+                            <i class="icon-search fa fa-search" aria-hidden="true"></i>
+                            <input type="text" class="search-input" placeholder="Nhập tên bài hát , nghệ sĩ hoặc MV...">
+                        </div>
+                    </div>
+                    <div class="header-user is-flex">
+                        <i class="fa-solid fa-shirt hide-on-mobile"></i>
+                        <i class="fa-solid fa-down-long hide-on-mb"></i>
+                        <i class="fa-solid fa-gear hide-on-mobile"></i>
+                        <img src="./img/avatar.jpg" alt="" class="icon-avatar">
+                    </div>
+                </header>
+                <div class="user-profile">
+                    <img src="./img/avatar.jpg" class="avatar-img">
+                    <h2 class="user-name">Vũ Văn Tiến</h2>
+                </div>
+
+                <div class="playlist">
+                    <div class="playlist-header is-flex">
+                        <h3 class="playlist-heading is-flex">
+                            <span>Bài Hát</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </h3>
+                        <div class="playlist-header-right is-flex">
+                            <button class="btn-upload is-flex">
+                                <i class="fa-solid fa-down-long"></i>
+                                <span>Tải Lên</span>
+                            </button>
+                            <button class="btn-play-all is-flex">
+                                <i class="fa-solid fa-play"></i>
+                                <span>Phát Tất Cả</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="playlist-body">
+                        <div class="playlist-body-left">
+                            <div class="cd-playlist">
+                                <img src="./img/icon-playing.gif" alt="" class="cd-gif">
+                                <img src="./img/music.jpg" alt="" class="cd-player">
+                            </div>
+                        </div>
+
+                        <div class="songs-list">
+                            <div class="song is-flex">
+                                <div class="song-left is-flex">
+                                    <div class="thumb">
+                                        <!-- <i class="ri-play-fill icon-song-play"></i> -->
+                                        <img src="./img/icon-playing.gif" alt="" class="gif-playing">
+                                    </div>
+                                    <div class="song-body">
+                                        <h3 class="song-name">Tên Bài hát</h3>
+                                        <p class="song-singer">Tên ca sĩ</p>
+                                    </div>
+                                </div>
+                                <div class="time-total">
+                                    <span>00:00</span>
+                                </div>
+                                <div class="song-option">
+                                    <i class="fa-regular fa-heart" id="heart"></i>
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-12 control">
+            <div class="control-main">
+                <div class="c-3">
+                    <div class="control-left">
+                        <div class="cd">
+                            <img src="./img/song1.jpg" alt="" class="cd-img">
+                        </div>
+                        <div class="cd-info">
+                            <marquee width="100%" direction="left" behavior="scroll" scrolldelay="140">
+                                <p class="cd-name">Vỡ</p>
+                            </marquee>
+                            <p class="cd-singer">Đức Phúc</p>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c-6">
+                    <div class="control-center">
+                        <div class="btn-control-list">
+                            <div class="btn btn-hover btn-random hide-on-mobile">
+                                <i class="fas fa-random"></i>
+                            </div>
+                            <div class="btn btn-hover btn-prev hide-on-mobile">
+                                <i class="fas fa-step-backward"></i>
+                            </div>
+                            <div class="btn btn-play">
+                                <i class="far fa-play-circle icon-play"></i>
+                                <i class="far fa-pause-circle icon-pause"></i>
+                            </div>
+                            <div class="btn btn-hover btn-next">
+                                <i class="fas fa-step-forward"></i>
+                            </div>
+                            <div class="btn btn-hover btn-repeat hide-on-mobile">
+                                <i class="fas fa-redo"></i>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="time-left hide-on-mobile">00:00</span>
+                            <div class="progress-line">
+                                <input id="progress" class="progress" type="range" value="0" step="0.1" min="0"
+                                    max="100">
+                                <div class="line-first"></div>
+                                <div class="line-current"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <span class="time-right hide-on-mobile">00:00</span>
+                        </div>
+
+                        <audio src="" id="audio"></audio>
+                    </div>
+                </div>
+
+                <div class="c-3">
+                    <div class="control-right is-flex">
+                        <i class="fab fa-youtube"></i>
+                        <i class="fas fa-microphone-alt"></i>
+                        <div class="volume is-flex">
+                            <div class="volume-icon">
+                                <i class="fas fa-volume-mute icon-volume-mute"></i>
+                                <i class="fas fa-volume-up icon-volume-up active"></i>
+                            </div>
+                            <div class="progress-volume-bar">
+                                <input id="progress-volume" class="progress-volume" type="range" value="100" step="1"
+                                    min="0" max="100">
+                                <div class="line-volume"></div>
+                                <div class="line-volume-current"></div>
+                                <div class="circle-volume"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="control-on-mobile" style="display: none">
+                            <div class="player-on-mobile">
+                                <div class="control-top">
+                                    <div class="dashboard-on-mobile">
+                                        <i class="ri-arrow-down-s-line mobile-icon-hide"></i>
+                                        <header>
+                                            <h4>Now playing:</h4>
+                                            <h2 class="heading-on-mobile">String 57th & 9th</h2>
+                                        </header>
+                                    </div>
+
+                                    <div class="cd-on-mobile">
+                                        <div class="cd-thumb-on-mobile"
+                                            style="background-image: url('./img/song1.jpg')">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="control-bottom">
+                                    <div class="progress-bar">
+                                        <span class="time-left">00:00</span>
+                                        <div class="progress-line">
+                                            <input id="progress" class="progress" type="range" value="0" step="0.1"
+                                                min="0" max="100">
+                                            <div class="line-first"></div>
+                                            <div class="line-current"></div>
+                                            <div class="circle"></div>
+                                        </div>
+                                        <span class="time-right">00:00</span>
+                                    </div>
+
+                                    <div class="btn-control-list">
+                                        <div class="btn btn-hover btn-random">
+                                            <i class="fas fa-random"></i>
+                                        </div>
+                                        <div class="btn btn-hover btn-prev">
+                                            <i class="fas fa-step-backward"></i>
+                                        </div>
+                                        <div class="btn btn-play">
+                                            <i class="far fa-play-circle icon-play"></i>
+                                            <i class="far fa-pause-circle icon-pause"></i>
+                                        </div>
+                                        <div class="btn btn-hover btn-next">
+                                            <i class="fas fa-step-forward"></i>
+                                        </div>
+                                        <div class="btn btn-hover btn-repeat">
+                                            <i class="fas fa-redo"></i>
+                                        </div>
+                                    </div>
+                                    <div class="control-on-mobile">
+                                        <div class="player-on-mobile">
+                                            <div class="control-top">
+                                                <div class="dashboard-on-mobile">
+                                                    <i class="ri-arrow-down-s-line mobile-icon-hide"></i>
+                                                    <header>
+                                                        <h4>Now playing:</h4>
+                                                        <h2 class="heading-on-mobile">String 57th & 9th</h2>
+                                                    </header>
+                                                </div>
+
+                                                <div class="cd-on-mobile">
+                                                    <div class="cd-thumb-on-mobile"
+                                                        style="background-image: url('./img/avatar.jpg')">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="contronl-button">
+                                                <div class="progress-bar">
+                                                    <span class="time-left">00:00</span>
+                                                </div>
+                                                <div class="progress-line">
+                                                    <input id="progress" class="progress" type="range" value="0"
+                                                        step="0.1" min="0" max="100">
+                                                    <div class="line-first"></div>
+                                                    <div class="line-current"></div>
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <span class="time-right">00:00</span>
+                                            </div>
+
+                                            <div class="btn-control-list">
+                                                <div class="btn btn-hover btn-random">
+                                                    <i class="fas fa-random"></i>
+                                                </div>
+                                                <div class="btn btn-hover btn-prev">
+                                                    <i class="fas fa-step-backward"></i>
+                                                </div>
+                                                <div class="btn btn-play">
+                                                    <i class="far fa-play-circle icon-play"></i>
+                                                    <i class="far fa-pause-circle icon-pause"></i>
+                                                </div>
+                                                <div class="btn btn-hover btn-next">
+                                                    <i class="fas fa-step-forward"></i>
+                                                </div>
+                                                <div class="btn btn-hover btn-repeat">
+                                                    <i class="fas fa-redo"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <audio src="" id="audio"></audio>
+                        </div>
+
+                        <script src="./main.js"></script>
+
+
+</body>
+
+</html>
